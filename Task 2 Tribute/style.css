@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Amiko');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-family: "Amiko", sans-serif;
+    background:var(--light);
+}
+:root{
+    --accent-color: #2B411C;
+    --link-color:#5B7742;
+    --dark-bg: #4C5D34;
+    --h1-dark-bg:rgb(99, 97, 12);
+    --light:#A4AA88;
+}
+h1,h2,h3{
+    color: var(--accent-color);
+    font-family: "Montserrat", sans-serif;
+    margin: 5px 0px 5px 0px;
+}
+h1{
+    font-size:30px;
+    margin: 10px 0px 10px 0px;
+    color:var(--h1-dark-bg);
+}
+a{
+    color:var(--dark-bg);
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+img{
+    border: 2px solid #323232;
+    cursor: pointer;
+    border-radius: 10px;
+    max-width: 763px;
+    height: auto;
+    width:100%;
+}
+#in{
+    color:rgb(224, 125, 11);
+}
+#title{
+    margin: 20px 40px 20px 40px;
+    text-align: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.26);
+}
+#img-div{
+    display: flex;
+    justify-content: center;
+    margin:20px 40px 20px 40px;
+    padding: 20px;
+    background-color: var(--dark-bg);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.26);
+}
+img{
+    display: block;
+}
+#image{
+    margin-bottom: 10px;
+	
+}
+#image:hover{
+	transform: scale(1.1);
+    filter: drop-shadow(10px 10px 20px #333);
+    transition: 0.3sec;
+	filter: saturate(100%);
+
+}
+#img-caption{
+    text-align: center;
+    margin: 10px 20px 0px 20px;
+    font-size: 30px;
+    color: white;
+}
+#img-caption{
+	transform: scale(1.05);
+    filter: drop-shadow(0 0 10px #333);
+    transition: 0.3sec;
+	cursor: pointer;
+}
+#tribute-info{
+    margin:20px 40px 20px 40px;
+}
+.card{
+    padding: 20px;
+    background-color:white;
+    border-radius: 10px;
+    margin:20px 0px 20px 0px;
+}
+#tribute-link{
+    display: inline-block;
+    padding: 20px 40px;
+    background-color: var(--accent-color);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.card:hover{
+    animation: ro 0.5s ease;
+    animation-fill-mode: forwards;
+
+}
+#tribute-link:hover{
+    animation: ho 0.5s ease;
+    animation-fill-mode: forwards;
+    border: none;
+}
+a:hover{
+    animation: hov 0.5s ease-out;
+    animation-fill-mode: forwards;
+    text-decoration: none;
+}
+
+@keyframes ro{
+    100%{
+        box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.26);
+        transform: scale(1.01);
+    }
+}
+
+@keyframes ho{
+    100%{
+        background-color: rgb(62, 92, 41);
+    }
+}
+
+@keyframes hov{
+    100%{
+        color:rgb(20, 34, 10);
+        border-bottom: 2px dashed #5B7742;
+    }
+}
+
+
+@media screen and (max-width:495px){
+    h1,h2,h3{
+        margin:2.5px 0px 2.5px 0px;
+    }
+    h1{
+        font-size: 26px;
+        margin: 5px 0px 5px 0px;
+    }
+    #title{
+        margin: 20px 20px 20px 20px;
+        padding: 10px 20px;
+    }
+    #img-div{
+        margin:20px 20px 20px 20px;
+    }
+    #img-caption{
+        text-align: center;
+        margin: 5px 10px 0px 10px;
+        font-size: 16px;
+    }
+    #tribute-info{
+        margin:10px 20px 10px 20px;
+    }
+}
